@@ -34,5 +34,15 @@ Covers: total revenue, average delivery time, monthly sales trend, revenue by oc
 **Fix the product catalogue concentration.** The top 5 products carry everything — that's a fragile position. If one product goes out of stock during Holi or Valentine's Day, revenue takes a real hit. They should either actively promote mid-catalogue products or cut dead SKUs and reinvest in what actually sells.
 
 **Time campaigns around Tuesday.** It's consistently the highest order day — probably when people plan ahead for weekend deliveries. A well-timed Monday evening email or push notification could catch buyers right as they're about to open FNP anyway.
+# File names
+# Problem statement
+Ferns and Petals Sales Analysis.pdf
+# Dashboard
+analysis sales fnp.png
+# Dataset file name
+**customers.csv
+**orders.csv
+**products.csv
+
 
 
