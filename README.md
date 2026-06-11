@@ -39,7 +39,7 @@ By exploring this data with **Microsoft Excel**, I aimed to identify trends and 
 - Cleaned raw order data — removed duplicates and standardized categorical values
 - Created calculated fields for **delivery time** (Delivery Date − Order Date)
 - Built pivot tables segmented by occasion, category, city, and day of week
-- Linked all slicers (Delivery Date, Order Date, Occasion) to pivot tables for full interactivity
+- add slicers (Delivery Date, Order Date, Occasion) to pivot tables for full interactivity
 
 ---
 
