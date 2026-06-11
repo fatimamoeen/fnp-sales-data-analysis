@@ -1,39 +1,93 @@
-# FNP Sales Analysis
+![header](https://capsule-render.vercel.app/api?type=waving&color=0:c94b4b,100:4b134f&height=200&section=header&text=FNP%20Sales%20Analysis&fontSize=50&fontColor=ffffff&animation=fadeIn)
 
-I built this dashboard as part of a data analytics case study using FNP's (Ferns and Petals) sales data. FNP is a gifting platform — think flowers, sweets, soft toys delivered for occasions like Holi, Diwali, Valentine's Day, birthdays, anniversaries, and Raksha Bandhan.
+## Table of Contents
+- [Introduction](#introduction)
+- [Project Overview](#project-overview)
+- [Data Transformation](#data-transformation)
+- [Key Insights](#key-insights)
+- [Business Recommendations](#business-recommendations)
+- [Dashboard Preview](#dashboard-preview)
 
-The dataset had about 1,000 orders from 2023 and I wanted to figure out what was actually driving their revenue, which cities were buying the most, and whether their delivery was holding up under load.
+---
 
-# What I found
+## Introduction
 
-•	Holi is their biggest occasion.Not Valentine's Day, not Diwali — Holi. It pulls roughly 3x the revenue of birthday orders. Once I saw this I went back and checked twice because it genuinely surprised me. The Colors category basically flatlines every other month and then explodes in March.
+I had the opportunity to complete a project using **FNP's (Ferns N Petals) Sales Dataset**. FNP is one of India's leading gifting platforms — delivering flowers, sweets, soft toys, and curated gifts for occasions like Holi, Diwali, Valentine's Day, Raksha Bandhan, birthdays, and anniversaries.
 
-•	February is their best month** — Valentine's Day does a lot of heavy lifting. August-September is decent too (Raksha Bandhan + early festive season). June and July are quiet. Like, really quiet. No major occasions = barely any orders. That's probably where a corporate gifting or birthday-focused push could make a difference.
+My goal was to journey through this dataset and create visual representations of the data to assess what was actually driving their revenue — which occasions performed, which cities were buying the most, and whether their delivery was holding up under load.
 
-•	Soft Toys and Sweets carry the catalogue.** The top 5 products bring in a disproportionate chunk of total revenue. The rest of the catalogue is pretty long tail — most products barely move.
+By exploring this data with **Microsoft Excel**, I aimed to identify trends and patterns that can help FNP make smarter decisions around inventory, marketing timing, and untapped city-level demand.
 
-•	Smaller cities showed up unexpectedly.** I expected metros to dominate and they do, but Imphal and Kavali appearing in the top 10 was interesting. Organic demand in places FNP probably isn't heavily marketing to.
+---
 
-•	Delivery holds up okay.** Higher order volumes don't seem to stretch delivery times much — average sits at 5.53 days. Tuesday is the busiest order day which is a bit counterintuitive but consistent across the data.
+## Project Overview
 
-•	Diwali underperforms.** For how culturally significant it is, the revenue numbers are underwhelming compared to Holi. Either the pricing is off or they're losing to competitors during that window.
+| Aspect | Details |
+|--------|---------|
+| **Business Goal** | Identify revenue drivers across occasions, cities, and product categories — and surface actionable gaps in FNP's sales strategy |
+| **Dataset** | FNP Sales Dataset — ~1,000 orders from 2023 (raw data file included in this repository) |
+| **Time Frame** | FY 2023 (full year) |
+| **Grain** | One record per order |
+| **Key Dimensions** | Occasion, Category, Product, City, Order Date, Delivery Date, Day of Week |
+| **Key Facts** | Total Revenue, Average Delivery Time, Order Volume, Monthly Sales Trend |
+| **Tools Used** | Microsoft Excel — Pivot Tables, Slicers, Bar Charts, Line Charts |
 
+---
 
-# The dashboard
+## Data Transformation
 
-•	Built entirely in Excel — pivot tables, slicers, and charts. You can filter everything by delivery date, order date, and occasion using the slicers on the right side panel.
+- Cleaned raw order data — removed duplicates and standardized categorical values
+- Created calculated fields for **delivery time** (Delivery Date − Order Date)
+- Built pivot tables segmented by occasion, category, city, and day of week
+- Linked all slicers (Delivery Date, Order Date, Occasion) to pivot tables for full interactivity
 
-Covers: total revenue, average delivery time, monthly sales trend, revenue by occasion, top categories, top products, orders by city, and orders by day of week.
-# Recommmendations
-**Double down on Holi, not Diwali.** The data is pretty clear — Holi is where the money is. They should be running early inventory planning, logistics prep, and marketing campaigns at least 6 weeks out. Diwali needs a rethink — the occasion is massive culturally but the numbers don't match. Worth figuring out whether it's a pricing problem, a product-fit problem, or just heavy competition from Amazon and Flipkart during that window.
+---
 
-**June and July need a strategy.** Right now those two months are basically dead. FNP could go after corporate gifting — companies do employee birthdays, work anniversaries, and onboarding gifts year-round. That's a B2B play that doesn't depend on seasonal occasions and could smooth out the revenue dip significantly.
+## Key Insights
 
-**Stop ignoring Tier-2 cities.** Imphal and Kavali showing up organically in the top 10 without any obvious marketing push means there's real demand going unserved. Even a small localized campaign or a local delivery partnership in 4-5 such cities could unlock meaningful revenue that's currently just sitting there.
+**Holi is the real revenue driver — not Valentine's Day**
+Holi pulls roughly 3x the revenue of birthday orders. The Colors category flatlines every other month and then explodes in March. This was counterintuitive enough that I went back and verified it twice.
 
-**Fix the product catalogue concentration.** The top 5 products carry everything — that's a fragile position. If one product goes out of stock during Holi or Valentine's Day, revenue takes a real hit. They should either actively promote mid-catalogue products or cut dead SKUs and reinvest in what actually sells.
+**February is their strongest month**
+Valentine's Day carries heavy lifting. August–September is decent too (Raksha Bandhan + early festive season). June and July are noticeably quiet — no major occasions means barely any orders.
 
-**Time campaigns around Tuesday.** It's consistently the highest order day — probably when people plan ahead for weekend deliveries. A well-timed Monday evening email or push notification could catch buyers right as they're about to open FNP anyway.
+**Soft Toys and Sweets carry the catalogue**
+The top 5 products bring in a disproportionate share of total revenue. The rest of the catalogue is long-tail — most products barely move.
 
+**Smaller cities showed up unexpectedly**
+Metros dominate as expected — but Imphal and Kavali appearing in the top 10 was a genuine surprise. Organic demand in cities FNP is likely not heavily marketing to.
+
+**Delivery holds up under load**
+Higher order volumes don't appear to stretch delivery times significantly. Average sits at **5.53 days**. Tuesday is consistently the highest order day — counterintuitive but stable across the data.
+
+**Diwali underperforms**
+For how culturally significant it is, Diwali's revenue numbers are underwhelming compared to Holi. Either pricing is off or FNP is losing ground to competitors during that window.
+
+---
+
+## Business Recommendations
+
+**Double down on Holi, rethink Diwali**
+The data is clear — Holi is where the money is. Inventory planning, logistics prep, and marketing campaigns should begin at least 6 weeks out. Diwali needs a strategic rethink — whether it's a pricing problem, product-fit problem, or competition from Amazon and Flipkart during that window.
+
+**Build a June–July strategy**
+These two months are effectively dead. A B2B corporate gifting push — employee birthdays, work anniversaries, onboarding gifts — doesn't depend on seasonal occasions and could smooth the revenue dip significantly.
+
+**Stop ignoring Tier-2 cities**
+Imphal and Kavali appearing organically in the top 10 without an obvious marketing push signals real unserved demand. Even localized campaigns or delivery partnerships in 4–5 such cities could unlock meaningful incremental revenue.
+
+**Fix catalogue concentration risk**
+The top 5 products carry everything — a fragile position. If one goes out of stock during Holi or Valentine's Day, revenue takes a direct hit. FNP should either actively promote mid-catalogue products or cut dead SKUs and reinvest in proven sellers.
+
+**Time campaigns around Tuesday**
+Tuesday is consistently the highest order day — likely when customers plan ahead for weekend deliveries. A well-timed Monday evening email or push notification could capture buyers right as they're already thinking about FNP.
+
+---
+
+## Dashboard Preview
+
+![FNP Sales Dashboard](./dashboard%20of%20sales%20analysis.png)
+
+---
 
 
