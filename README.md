@@ -27,9 +27,7 @@ By exploring this data with **Microsoft Excel**, I aimed to identify trends and 
 | **Business Goal** | Identify revenue drivers across occasions, cities, and product categories — and surface actionable gaps in FNP's sales strategy |
 | **Dataset** | FNP Sales Dataset — ~1,000 orders from 2023 (raw data file included in this repository) |
 | **Time Frame** | FY 2023 (full year) |
-| **Grain** | One record per order |
 | **Key Dimensions** | Occasion, Category, Product, City, Order Date, Delivery Date, Day of Week |
-| **Key Facts** | Total Revenue, Average Delivery Time, Order Volume, Monthly Sales Trend |
 | **Tools Used** | Microsoft Excel — Pivot Tables, Slicers, Bar Charts, Line Charts |
 
 ---
